@@ -1,6 +1,6 @@
 # 📄 Company Policy RAG Assistant
 
-> Potens AI/ML Internship Assignment – Question 1: Document Q&A with Citations - Time Started at: 8:00 pm. Finished at: 6:30 pm 
+> Potens AI/ML Internship Assignment – Question 1: Document Q&A with Citations - Time Started at: 8:00 pm(Tue). Finished at: 6:30 pm(Wed). 
 
 ## Overview
 

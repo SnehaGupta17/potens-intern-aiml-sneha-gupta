@@ -30,34 +30,45 @@ def check_contradiction(doc1_name, doc2_name):
         return {"error": f"{doc2_name} not found"}
 
     prompt = f"""
-You are comparing two company policy documents.
+    You are comparing two company policy documents.
 
-Determine whether they contain any contradictory statements.
+    Document A = {doc1_name}
+    Document B = {doc2_name}
 
-If they conflict, reply ONLY in this JSON format:
+    Determine whether these two documents contain any contradictory statements.
 
-{{
-    "conflict": true,
-    "topic": "...",
-    "reason": "..."
-}}
+    Rules:
+    1. If they contradict each other, return ONLY valid JSON.
+    2. In the reason field, ALWAYS mention the actual document filenames instead of saying "Document A" or "Document B".
+    3. Explain exactly which statements conflict.
 
-If they do NOT conflict, reply ONLY:
+    If they conflict, return:
 
-{{
-    "conflict": false,
-    "reason": "No contradiction found."
-}}
+    {{
+        "conflict": true,
+        "topic": "<policy topic>",
+        "reason": "<Explain the contradiction by mentioning {doc1_name} and {doc2_name}>"
+    }}
 
-Document A ({doc1_name}):
+    If they do NOT conflict, return:
 
-{text1}
+    {{
+        "conflict": false,
+        "reason": "No contradiction found between {doc1_name} and {doc2_name}. These documents cover different policies and do not contain conflicting statements."
+    }}
 
+    ========================
+    {doc1_name}
+    ========================
 
-Document B ({doc2_name}):
+    {text1}
 
-{text2}
-"""
+    ========================
+    {doc2_name}
+    ========================
+
+    {text2}
+    """
 
     
 

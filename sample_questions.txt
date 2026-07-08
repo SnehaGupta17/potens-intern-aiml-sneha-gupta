@@ -1,0 +1,96 @@
+📄 Leave Policy
+How many paid vacation days do employees receive?
+
+How many sick leaves are allowed?
+
+Is parental leave available?
+
+How long is bereavement leave?
+
+Can unused PTO be carried forward?
+
+When should employees submit leave requests?
+
+What happens if I submit a leave request late?
+🏠 Work From Home Policy
+Can employees work from home?
+
+How many days per week can employees work remotely?
+
+What are the core working hours for remote employees?
+
+Which communication tools should remote employees use?
+
+Can I connect using public Wi-Fi?
+
+Who approves remote work?
+🔒 IT Security Policy
+Can I use my personal laptop for work?
+
+What should I do if I receive a phishing email?
+
+Can I install software on my office laptop?
+
+Should I lock my computer when leaving my desk?
+
+Can I connect to public Wi-Fi?
+
+What should I do if my laptop is stolen?
+⏰ Attendance Policy
+What time does the workday start?
+
+How late can I arrive before being marked late?
+
+How should I report an absence?
+
+What happens after three consecutive unreported absences?
+
+Is punctuality mandatory?
+
+Can I notify my manager after 8 AM?
+📘 Code of Conduct
+Can employees accept gifts?
+
+What is the maximum gift value allowed?
+
+How should confidential information be handled?
+
+What happens if an employee violates the code of conduct?
+
+How can employees report misconduct?
+
+Is retaliation against whistleblowers allowed?
+🔍 Cross-document Questions (Good Demo)
+
+These show retrieval across multiple documents.
+
+Can I work from home if I am on leave?
+
+What policies mention employee safety?
+
+Which policies require manager approval?
+
+Which policy talks about confidentiality?
+
+What are the responsibilities of remote employees?
+
+What documents mention supervisors?
+❌ Hallucination Test (Very Important)
+
+These demonstrate that your system does not hallucinate.
+
+What is the company's maternity insurance policy?
+
+Does the company provide free lunch?
+
+What is the employee salary structure?
+
+What is the travel reimbursement policy?
+
+Does the company offer stock options?
+
+What is the dress code?
+
+Is there a bonus policy?
+
+Does the company provide cab service?

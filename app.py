@@ -99,6 +99,7 @@ with tab2:
 
         result = response.json()
 
+
         if result["conflict"]:
 
             st.error("⚠️ Contradiction Found")

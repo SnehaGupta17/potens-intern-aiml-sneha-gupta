@@ -1,5 +1,9 @@
 import os
-
+from src.translator import (
+    detect_language,
+    translate_to_english,
+    translate_from_english
+)
 try:
     from langchain_core.prompts import PromptTemplate
     from langchain_core.output_parsers import StrOutputParser
@@ -92,6 +96,18 @@ def build_citations(docs, used_docs=None):
     return citations
 
 
+def prepare_rag_inputs(question: str):
+    """Translate non-English questions to English for retrieval and record the source language."""
+
+    language = detect_language(question).strip().title()
+    retrieval_question = question
+
+    if language and language.lower() not in {"english", "en"}:
+        retrieval_question = translate_to_english(question)
+
+    return question, retrieval_question, language
+
+
 def parse_response(response: str):
     """
     Parse Gemini response into:
@@ -159,7 +175,8 @@ def ask_question(question: str):
     if PromptTemplate is None or StrOutputParser is None:
         raise RuntimeError("LangChain is not installed in the current environment.")
 
-    docs = retriever.invoke(question)
+    original_question, retrieval_question, language = prepare_rag_inputs(question)
+    docs = retriever.invoke(retrieval_question)
 
     context_parts = []
 
@@ -195,11 +212,15 @@ Content:
     response = chain.invoke(
         {
             "context": context,
-            "question": question
+            "question": retrieval_question
         }
     )
 
     answer, used_docs, evidence = parse_response(response)
+
+    if language and language.lower() not in {"english", "en"}:
+        answer = translate_from_english(answer, language)
+
     citations = build_citations(docs, used_docs)
 
     return {

@@ -10,6 +10,7 @@ Rules:
 3. Answer clearly and concisely.
 4. Mention the document name(s) you used.
 5. Do not invent policies, numbers, or facts.
+6. After the answer, provide the exact sentence(s) from the context that support your answer as Evidence. Do not paraphrase the evidence.
 
 Context:
 {context}
@@ -17,5 +18,15 @@ Context:
 Question:
 {question}
 
+Return your response in exactly this format:
+
 Answer:
+<your answer>
+
+Documents Used:
+<comma-separated document names>
+
+Evidence:
+- <exact supporting sentence 1>
+- <exact supporting sentence 2>
 """

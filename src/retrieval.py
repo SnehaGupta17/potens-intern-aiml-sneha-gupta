@@ -14,7 +14,7 @@ def get_retriever():
 
     retriever = vector_store.as_retriever(
         search_type="similarity",
-        search_kwargs={"k": 5}
+        search_kwargs={"k": 3}  #Three highly relevant chunks are often enough and reduce irrelevant context sent to the LLM.
     )
 
     return retriever

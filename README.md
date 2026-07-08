@@ -617,30 +617,31 @@ All implementation decisions, coding, debugging, testing, and final integration 
 <p align="center">
   <img src="screenshots/Swagger UI.png" alt="Testing" width="600">Testing
 </p>
-
+<br>
 <p align="center">
   <img src="screenshots/ask_eng.png" alt="Testing" width="600">Q/A in English
 </p>
-
+<br>
 <p align="center">
   <img src="screenshots/ask_spanish.png" alt="Testing" width="600">Q/A in Spanish
 </p>
-
+<br>
 <p align="center">
   <img src="screenshots/ask_marathi.png" alt="Testing" width="600">Q/A in Marathi
 </p>
-
+<br>
 <p align="center">
   <img src="screenshots/No Hallucination.png" alt="Testing" width="600">No Hallucination
 </p>
-
+<br>
 <p align="center">
   <img src="screenshots/check_contradiction1.png" alt="Testing" width="600">Check Contradiction 1
 </p>
-
+<br>
 <p align="center">
   <img src="screenshots/check_contradiction2.png" alt="Testing" width="600">Check Contradiction 2
 </p>
+<br>
 
 ---
 
